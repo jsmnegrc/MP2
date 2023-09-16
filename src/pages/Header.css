@@ -1,27 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.html,
+.body {
+    margin: 0;
+    padding:0;
+}
+
+#navigation {
+    background-color: green;
+}
+
+div#navLinks .hme {
+    color: white;
+}
+
 .logo,
 .navi {
     width: 100px;
     height: 100px;
     display: flex;
-    right:0px;
-    margin-right: 5rem;
 
-div#navLinks {
-    width: 100%;
-}
-
-}
-
-div#Links {
+.navi {
     display: flex;
-    left: 100px;
+    justify-content: left;
+    margin-right: 100px;
+    background-color: green;
 }
 
 div#social {
-    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    float: right;
+}
+
 }
 div#social a {
-    color: black;
+    color: white;
     
     
 }

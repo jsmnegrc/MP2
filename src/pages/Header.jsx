@@ -12,15 +12,16 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" id="navigation">
       <Container id="nav">
-        <div id='UBlogo'>
+
         <Navbar.Brand as={Link} to="./" className='navi'>
         <img src={Logo} alt="Logo" className="Logo" />
         </Navbar.Brand>
-        </div>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
+
           <div id="navLinks">
           <Nav className="m-auto ">
             <Nav.Link as={Link} to="/" className='hme'>
@@ -43,6 +44,7 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           </div>
+
         <div id="social">
         <a href="/">
           <FaFacebookSquare size={24} className='fb' />
