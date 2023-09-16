@@ -1,0 +1,27 @@
+.logo,
+.navi {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    right:0px;
+    margin-right: 5rem;
+
+div#navLinks {
+    width: 100%;
+}
+
+}
+
+div#Links {
+    display: flex;
+    left: 100px;
+}
+
+div#social {
+    align-items: flex-end;
+}
+div#social a {
+    color: black;
+    
+    
+}
