@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import Logo from "../assets/UB Logo.png"
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -34,7 +36,13 @@ const Header = () => {
               Contact
             </Nav.Link>
           </Nav>
-          <Button variant="outline-success">Sign in</Button>
+          
+        <a href="/">
+          <FaFacebookSquare size={24} />
+        </a>
+        <a href="/">
+          <FaInstagramSquare size={24} />
+        </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>
