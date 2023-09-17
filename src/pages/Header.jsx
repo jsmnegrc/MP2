@@ -47,16 +47,16 @@ const Header = () => {
 
         <div id="social">
         <a href="/">
-          <FaFacebookSquare size={24} className='fb' />
+          <FaFacebookSquare className='fb' />
         </a>
         <a href="/">
-          <FaInstagramSquare size={24} className='ig' />
+          <FaInstagramSquare className='ig' />
         </a>
         <a href="/">
-          <FaYoutube size={24} className='yt' />
+          <FaYoutube className='yt' />
         </a>
         <a href="/">
-          <FaTwitterSquare size={24} className='tw' />
+          <FaTwitterSquare className='tw' />
         </a>
         </div>  
         </Navbar.Collapse>

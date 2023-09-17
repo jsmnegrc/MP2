@@ -1,7 +1,7 @@
 
 
 .footer-link {
-    color: #333; /* Set the link color */
+    color: #000000;
     text-decoration: none;
 }
 
@@ -11,8 +11,8 @@ footer ul {
     margin: 0;
   }
   
-  footer a {
-    color: white;
+  footer a, p {
+    color: #000000;
     text-decoration: none;
   }
   

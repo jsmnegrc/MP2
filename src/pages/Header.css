@@ -21,11 +21,12 @@
 }
 
 .navbar-nav {
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navbar-nav .nav-link {
-    color: #FFFFFF;
+    color: white;
+    font-size: 20px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -37,16 +38,12 @@
 
 .navbar-nav .nav-link:active,
 .navbar-nav .nav-link:focus {
-    color: #FFFFFF;
+    color: white;
     text-shadow: none;
 }
 
-.social {
-    margin-left: 0;
-}
-
 div#social a {
-    color: #FFFFFF;
-    margin-right: 1rem;
-
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
 }
