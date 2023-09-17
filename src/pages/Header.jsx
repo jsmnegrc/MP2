@@ -3,14 +3,20 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo_company.png";
+import Logo from "../assets/logo_company.png"
+import './Header.css';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand as={Link} to="./">
-          <img src={Logo} alt="Logo" />
+    <Navbar expand="lg" id="navigation">
+      <Container id="nav">
+
+        <Navbar.Brand as={Link} to="./" className='navi'>
+        <img src={Logo} alt="Logo" className="Logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
