@@ -1,4 +1,4 @@
-import Button from "react-bootstrap/Button";
+import React from 'react';
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -12,29 +12,47 @@ const Header = () => {
         <Navbar.Brand as={Link} to="./">
           <img src={Logo} alt="Logo" />
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="m-auto ">
-            <Nav.Link as={Link} to="/">
+
+          <div className="d-flex mx-auto" id="navLinks">
+          <Nav className="ml-auto ">
+            <Nav.Link as={Link} to="/" className='hme'>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
+            <Nav.Link as={Link} to="/about" className='abt'>
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/community">
+            <Nav.Link as={Link} to="/community" className='com'>
               Community
             </Nav.Link>
-            <Nav.Link as={Link} to="/news">
-              News
-            </Nav.Link>
-            <Nav.Link as={Link} to="/pricing">
+            <Nav.Link as={Link} to="/pricing" className='price'>
               Pricing
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
+            <Nav.Link as={Link} to="/news" className='news'>
+              News
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact" className='con'>
               Contact
             </Nav.Link>
           </Nav>
-          <Button variant="outline-success">Sign in</Button>
+          </div>
+
+        <div id="social">
+        <a href="/">
+          <FaFacebookSquare size={24} className='fb' />
+        </a>
+        <a href="/">
+          <FaInstagramSquare size={24} className='ig' />
+        </a>
+        <a href="/">
+          <FaYoutube size={24} className='yt' />
+        </a>
+        <a href="/">
+          <FaTwitterSquare size={24} className='tw' />
+        </a>
+        </div>  
         </Navbar.Collapse>
       </Container>
     </Navbar>
