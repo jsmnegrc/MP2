@@ -12,7 +12,7 @@ const Footer = () => {
           <Col>
             <h5>Quick Links</h5>
             </Col>
-            <row>
+            <Row>
             <nav>
               <ul>
                 <li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </li>
               </ul>
             </nav>
-          </row>
+          </Row>
           <Col className="align-self-center">
             <p>Copyright © 2023 Urban Haven | All rights reserved</p>
           </Col>
