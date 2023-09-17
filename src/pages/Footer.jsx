@@ -11,29 +11,31 @@ const Footer = () => {
         <Row>
           <Col>
             <h5>Quick Links</h5>
+            </Col>
+            <row>
             <nav>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/" className="footer-link">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about" className="footer-link">About</Link>
                 </li>
                 <li>
-                  <Link to="/community">Community</Link>
+                  <Link to="/community" className="footer-link">Community</Link>
                 </li>
                 <li>
-                  <Link to="/pricing">Pricing</Link>
+                  <Link to="/pricing" className="footer-link">Pricing</Link>
                 </li>
                 <li>
-                  <Link to="/news">News</Link>
+                  <Link to="/news" className="footer-link">News</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact" className="footer-link">Contact</Link>
                 </li>
               </ul>
             </nav>
-          </Col>
+          </row>
           <Col className="align-self-center">
             <p>Copyright © 2023 Urban Haven | All rights reserved</p>
           </Col>

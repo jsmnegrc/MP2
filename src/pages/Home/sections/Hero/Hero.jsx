@@ -1,7 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Video from "./assets/Aerial Shot of Residential Neighborhood - DRONE SHOT FOOTAGE, FREE STOCK VIDEO [HD]";
+import Poster from "./assets/video-poster.jpg";
+import Video from "./assets/Aerial Shot.mp4";
 import "./Hero.css";
 
 const Hero = () => {
@@ -20,6 +21,7 @@ const Hero = () => {
             </h3>
           </Col>
           <Col>
+          <video width="100%" controls poster={Poster}></video>
             <source src={Video} type="video/mp4" alt="UB aerial" />
           </Col>
         </Row>
