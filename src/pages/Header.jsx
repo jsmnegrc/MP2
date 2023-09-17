@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-import Logo from "../assets/UB Logo.png"
+import Logo from "../assets/logo_company.png"
 import './Header.css';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -22,8 +22,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
 
-          <div id="navLinks">
-          <Nav className="m-auto ">
+          <div className="d-flex mx-auto" id="navLinks">
+          <Nav className="ml-auto ">
             <Nav.Link as={Link} to="/" className='hme'>
               Home
             </Nav.Link>
