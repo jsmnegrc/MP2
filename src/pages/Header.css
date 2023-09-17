@@ -12,7 +12,12 @@
 .navi {
     width: 80px;
     height: 100px;
-    display: flex; 
+    display: flex;
+    
+}
+
+.logo {
+    border-radius: 50%;
 }
 
 .navbar-nav {
@@ -43,6 +48,5 @@
 div#social a {
     color: white;
     margin-right: 1rem;
+
 }
-
-
