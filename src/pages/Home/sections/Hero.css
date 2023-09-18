@@ -3,6 +3,8 @@
   overflow: hidden;
   height: 550px;
   font-family: Martian Mono;
+  margin: 0;
+  padding: 0;
 }
 
 .video-container {

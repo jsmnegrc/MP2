@@ -7,3 +7,5 @@ const http = axios.create({
     "X-RapidAPI-Host": import.meta.env.VITE_HOST,
   },
 });
+
+export default axios

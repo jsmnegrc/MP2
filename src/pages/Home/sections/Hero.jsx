@@ -27,7 +27,7 @@ const Hero = () => {
     }
   }, []);
 
-  return (
+    return (
     <section
       id="Hero"
       className="d-flex justify-content-center align-items-center"

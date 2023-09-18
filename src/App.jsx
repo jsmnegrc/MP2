@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import routes from "./routes";
@@ -21,6 +21,7 @@ const App = () => {
             );
           })}
         </Routes>
+        <Outlet />
       </main>
       <Footer />
     </>
