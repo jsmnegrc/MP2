@@ -28,20 +28,23 @@
 }
 
 .align-self-center {
-  text-align: center; 
-  color: #FFFFFF;
+  text-align: center;
+  color: #ffffff;
   padding: 20px;
+}
+#Hero-Text {
+  padding: 0;
 }
 
 .hero-heading {
   font-size: 2rem;
-  color: #FFFFFF; 
+  color: #ffffff;
   font-weight: bold;
 }
 
 .hero-subheading {
   font-size: 3rem;
-  color: #93e99a; 
+  color: #93e99a;
   margin-top: 10px;
   font-style: italic;
 }
