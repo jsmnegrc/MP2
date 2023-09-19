@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const PropertiesList = ({ properties }) => {
   return (
     <Card>
-      <Card.Img variant="top" src={properties.coverPhoto} />
+      <Card.Img variant="top" src={properties.url} />
       <Card.Body>
         <Card.Title>{properties.title}</Card.Title>
-        <Card.Text>{properties.price}</Card.Text>
+        <Card.Text>{properties.purpose}</Card.Text>
         <Button
           as={Link}
           to={`/properties/${property.id}`}
