@@ -1,6 +1,6 @@
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Properties from "./pages/Properties/Properties";
+import Property from "./pages/Properties/Property";
 import Community from "./pages/Community/Community";
 import News from "./pages/News/News";
 import Contact from "./pages/Contact/Contact";
@@ -15,8 +15,8 @@ const routes = [
     element: <About />,
   },
   {
-    path: "/properties",
-    element: <Properties />,
+    path: "/property",
+    element: <Property />,
   },
   {
     path: "/community",
