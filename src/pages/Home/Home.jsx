@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Hero from "./sections/Hero";
+import Hero from "../../components/Hero/Hero";
 import Content from "../../pages/Home/sections/Content";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
+
 const Home = () => {
-  // Define state for showing/hiding the scroll-to-top icon
   const [showScrollIcon, setShowScrollIcon] = useState(false);
 
-  // Define a function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Use the useEffect hook to listen for scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // Show the scroll-to-top icon when the user scrolls down
       if (window.scrollY > 100) {
         setShowScrollIcon(true);
       } else {
@@ -26,10 +23,8 @@ const Home = () => {
       }
     };
 
-    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -41,13 +36,22 @@ const Home = () => {
       <Container className="content">
         <div id="content-header">
           <h1 className="header">Choose your Urban Community </h1>
-          <p className="intro">
-            Welcome to the wonderful world of Complete Homes, where beauty
-            abounds. At Complete Homes, we transform engaging and inventive
-            amenities into reality. In our communities, everyone enjoys seamless
-            access to life's necessities. When it comes to owning your home, we
-            make the journey convenient and well-guided.
-          </p>
+          <div className="flexbox">
+          <Row>
+              <Col xs={12}>
+                Welcome to beautifully Complete homes
+              </Col>
+              <Col xs={12}>
+                Where engaging & Conceptive amenities are brought to life
+              </Col>
+              <Col xs={12}>
+                Where everyone is Connected to life’s essentials
+              </Col>
+              <Col xs={12}>
+                Owning your home is a Convenient & guided journey
+              </Col>
+            </Row>
+          </div>
         </div>
         <div>
           <Link to="/batangas">Batangas</Link>

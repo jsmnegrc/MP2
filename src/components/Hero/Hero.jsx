@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import VideoPoster from "../../../assets/video-poster.jpg";
-import Video from "../../../assets/Aerial Shot.mp4";
+import VideoPoster from "../../assets/video-poster.jpg";
+import Video from "..//../assets/Aerial Shot.mp4";
 import "./Hero.css";
+import CountUp from "react-countup";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -55,6 +56,36 @@ const Hero = () => {
           “Where Dreams Find a Home”
           </h3>
         </Row>
+
+        <div className="align-self-center">
+        <div className="flexCounter stat">
+          <span>
+            <CountUp start={7000} end={9001} duration={4} />
+            <span>+</span>
+          </span>
+          <br />
+            <span>Premium Houses</span>
+        </div>
+
+        <div className="flexCounter stat">
+          <span>
+            <CountUp start={1020} end={2089} duration={4} />
+            <span>+</span>
+          </span>
+          <br />
+            <span>Happy Customers</span>
+        </div>
+
+        <div className="flexCounter stat">
+          <span>
+            <CountUp end={27}/>
+            <span>+</span>
+          </span>
+          <br />
+            <span>Awards</span>
+        </div>
+        </div>
+
       </Container>
     </section>
   );

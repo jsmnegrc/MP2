@@ -30,9 +30,12 @@
 }
 
 .align-self-center {
+  max-width: 100%;
   text-align: center; 
   color: #FFFFFF;
   padding: 20px;
+  justify-content: space-between;
+  opacity: 70%;
 }
 
 .hero-heading {
@@ -47,3 +50,22 @@
   margin-top: 10px;
   font-style: italic;
 }
+
+.stat {
+  background-color: #17601D;
+}
+
+.stat>:nth-child(1) {
+  font-size: 1.2rem;
+}
+
+.stat>:nth-child(1)>:last-child {
+  color: #cfc536;
+}
+
+
+
+
+
+
+

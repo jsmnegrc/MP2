@@ -40,4 +40,12 @@ div#social a {
     font-size: 1.5rem;
     color: white;
     margin-right: 20px;
+    transition: transform .2s;
+}
+
+div#social a:hover {
+    color:  #93e99a;
+    text-shadow: none;
+    transition:  .4s;
+    box-shadow: 1px 1px;
 }
