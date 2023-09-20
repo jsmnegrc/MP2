@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
-import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
+import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
+import "Swiper/css";
+import "./UrbanCom.css";
+import data from 
+
+
 
 const Community = ({ showScrollIcon }) => {
   const scrollToTop = () => {
@@ -10,24 +16,24 @@ const Community = ({ showScrollIcon }) => {
   };
 
   return (
-    <BootstrapContainer className="content">
+    <Container className="content">
       <div id="content-header">
         <h1 className="header">Choose your Urban Community </h1>
         <div className="flexbox">
-          <BootstrapRow className="header-content">
-            <BootstrapCol xs={12}>
+          <Row className="header-content">
+            <Col xs={12}>
               Welcome to beautifully Complete homes
-            </BootstrapCol>
-            <BootstrapCol xs={12}>
+            </Col>
+            <Col xs={12}>
               Where engaging & Conceptive amenities are brought to life
-            </BootstrapCol>
-            <BootstrapCol xs={12}>
+            </Col>
+            <Col xs={12}>
               Where everyone is Connected to life’s essentials
-            </BootstrapCol>
-            <BootstrapCol xs={12}>
+            </Col>
+            <Col xs={12}>
               Owning your home is a Convenient & guided journey
-            </BootstrapCol>
-          </BootstrapRow>
+            </Col>
+          </Row>
         </div>
       </div>
       <div>
@@ -56,7 +62,7 @@ const Community = ({ showScrollIcon }) => {
           </a>
         )}
       </div>
-    </BootstrapContainer>
+    </Container>
   );
 };
 
