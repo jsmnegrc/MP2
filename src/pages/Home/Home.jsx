@@ -37,7 +37,7 @@ const Home = () => {
         <div id="content-header">
           <h1 className="header">Choose your Urban Community </h1>
           <div className="flexbox">
-          <Row>
+          <Row className="header-content">
               <Col xs={12}>
                 Welcome to beautifully Complete homes
               </Col>
