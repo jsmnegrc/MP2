@@ -57,34 +57,41 @@ const Hero = () => {
           </h3>
         </Row>
 
-        <div className="align-self-center">
-        <div className="flexCounter stat">
-          <span>
-            <CountUp start={7000} end={9001} duration={4} />
-            <span>+</span>
-          </span>
-          <br />
-            <span>Premium Houses</span>
-        </div>
+        <div className="container">
+  <div className="row">
+    <div className="col-12 col-md-4">
+      <div className="align-self-center flexCounter stat">
+        <span>
+          <CountUp start={7000} end={9001} duration={4} />
+          <span>+</span>
+        </span>
+        <br />
+        <span>Premium Houses</span>
+      </div>
+    </div>
+    <div className="col-12 col-md-4">
+      <div className="align-self-center flexCounter stat">
+        <span>
+          <CountUp start={1020} end={2089} duration={4} />
+          <span>+</span>
+        </span>
+        <br />
+        <span>Happy Customers</span>
+      </div>
+    </div>
+    <div className="col-12 col-md-4">
+      <div className="align-self-center flexCounter stat">
+        <span>
+          <CountUp end={27} />
+          <span>+</span>
+        </span>
+        <br />
+        <span>Award Winnings</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div className="flexCounter stat">
-          <span>
-            <CountUp start={1020} end={2089} duration={4} />
-            <span>+</span>
-          </span>
-          <br />
-            <span>Happy Customers</span>
-        </div>
-
-        <div className="flexCounter stat">
-          <span>
-            <CountUp end={27}/>
-            <span>+</span>
-          </span>
-          <br />
-            <span>Awards</span>
-        </div>
-        </div>
 
       </Container>
     </section>

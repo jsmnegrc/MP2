@@ -32,8 +32,3 @@ div.flexbox {
     align-items: center;
 }
 
-.flexbox {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
