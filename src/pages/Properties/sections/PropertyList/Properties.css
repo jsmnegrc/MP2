@@ -1,0 +1,20 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+section#property .card {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+.card-item {
+  padding-right: 15px;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  margin-right: 20px;
+}
+.img-agent {
+  max-width: 50px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 99px;
+}
