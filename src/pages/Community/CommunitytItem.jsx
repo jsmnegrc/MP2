@@ -1,20 +1,48 @@
-import React from "react";
-import { Card } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
 
-const ContentItem = ({ property }) => {
-  return (
-    <Card>
-      <Card.Img variant="top" src={property.thumbnail} />
-      <Card.Body>
-        <Card.Title>{property.address}</Card.Title>
-        <Card.Text>{property.propertyType}</Card.Text>
-        <Card.Text>Price: {property.price}</Card.Text>
-        <Card.Text>Bedrooms: {property.bedrooms}</Card.Text>
-        <Card.Text>Bathrooms: {property.bathrooms}</Card.Text>
-        <Card.Text>Area: {property.area} sq. ft.</Card.Text>
-      </Card.Body>
-    </Card>
-  );
+const Properties = () => {
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    async function getProperties() {
+      const options = {
+        method: "GET",
+        url: "https://bayut.p.rapidapi.com/properties/list",
+        params: {
+          locationExternalIDs: "5002,6020",
+          purpose: "for-rent",
+          hitsPerPage: "25",
+          page: "0",
+          lang: "en",
+          sort: "city-level-score",
+          rentFrequency: "monthly",
+          categoryExternalID: "4",
+        },
+        headers: {
+          "X-RapidAPI-Key":
+            "a190202405mshc29e6d75addab9bp1d8b1fjsnd598e9d5c666",
+          "X-RapidAPI-Host": "bayut.p.rapidapi.com",
+        },
+      };
+
+      try {
+        const response = await axios.request(options);
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    getProperties();
+
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    console.log(properties);
+
+    return () => {};
+  }, [properties]);
 };
 
-export default ContentItem;
+export default Properties;

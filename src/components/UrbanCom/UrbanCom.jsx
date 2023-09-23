@@ -6,7 +6,6 @@ import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
 import "Swiper/css";
 import "./UrbanCom.css";
-import data from 
 
 
 
