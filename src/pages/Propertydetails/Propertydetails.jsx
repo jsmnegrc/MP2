@@ -12,24 +12,7 @@ const Propertydetails = () => {
     getPropertydetails(params.externalID);
   }, []);
 
-  async function getPropertydetails(externalID) {
-    const options = {
-      headers: {
-        "X-RapidAPI-Key": "3c1cd34e83mshab587e466a5d3d1p1fbacajsndbc48cc83696",
-        "X-RapidAPI-Host": "bayut.p.rapidapi.com",
-      },
-    };
-    try {
-      const response = await axios.get(
-        "https://bayut.p.rapidapi.com/properties/detail?externalID=" +
-          externalID,
-        options
-      );
-      setPropertydetails(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  async function getPropertydetails(externalID) {}
 
   return (
     <>

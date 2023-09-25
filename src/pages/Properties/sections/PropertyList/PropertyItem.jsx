@@ -18,27 +18,6 @@ const PropertyItem = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "https://bayut.p.rapidapi.com/properties/list",
-          {
-            params: {
-              locationExternalIDs: "5002,6020",
-              purpose: "for-rent",
-              hitsPerPage: "25",
-              page: "0",
-              lang: "en",
-              sort: "city-level-score",
-              rentFrequency: "monthly",
-              categoryExternalID: "4",
-            },
-            headers: {
-              "X-RapidAPI-Key":
-                "3c1cd34e83mshab587e466a5d3d1p1fbacajsndbc48cc83696",
-              "X-RapidAPI-Host": "bayut.p.rapidapi.com",
-            },
-          }
-        );
-
         if (Array.isArray(response.data.hits)) {
           setPropertyList(response.data.hits);
         }
