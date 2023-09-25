@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
+import { Link } from "react-router-dom";
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
+import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
+import "./CommunitytItem";
 
-const Properties = () => {
+
+const CommunityItems = () => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -45,4 +51,4 @@ const Properties = () => {
   }, [properties]);
 };
 
-export default Properties;
+export default CommunityItems;

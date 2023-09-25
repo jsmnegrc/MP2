@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
+import Communities from "./Communities";
 
 const Community = ({ showScrollIcon }) => {
   const scrollToTop = () => {
@@ -30,14 +31,17 @@ const Community = ({ showScrollIcon }) => {
           </BootstrapRow>
         </div>
       </div>
-      <div>
-        <Link to="/batangas">Batangas</Link>
-        <Link to="/bicol">bicol</Link>
-        <Link to="/cabanatuan">Cabanatuan</Link>
-        <Link to="/cavite">Cavite</Link>
-        <Link to="/laspinas">Las Piñas</Link>
-        <Link to="/bataan">Bataan</Link>
-      </div>
+
+      <section className="main-container">
+        <div className="container">
+          <div className="banner">
+          <h1>this is where the community will be displayed</h1>
+          </div>
+
+        </div>
+      </section>
+
+      <Communities />
 
       <div>
         <h3>Google Map</h3>

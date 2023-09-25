@@ -37,7 +37,7 @@ const Footer = () => {
             </nav>
           </Row>
           <Col className="align-self-center">
-            <p>Copyright © 2023 Urban Haven | All rights reserved</p>
+            <p className="copyright">Copyright © 2023 Urban Haven | All rights reserved</p>
           </Col>
         </Row>
       </Container>

@@ -4,9 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo_company.png"
-import "./Header.css";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { FaInstagramSquare } from 'react-icons/fa';
+import { FaTwitterSquare } from 'react-icons/fa';
+
+import "./Header.css";
+
+
 
 const Header = () => {
   return (
@@ -30,8 +35,8 @@ const Header = () => {
             <Nav.Link as={Link} to="/community" className='com'>
               Community
             </Nav.Link>
-            <Nav.Link as={Link} to="/pricing" className='price'>
-              Pricing
+            <Nav.Link as={Link} to="/properties" className='properties'>
+              Properties
             </Nav.Link>
             <Nav.Link as={Link} to="/news" className='news'>
               News
