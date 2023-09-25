@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Booking-button {
+    background-color:#17601D ;
+    color: #FFFFFF;
+}
+
+.Booking-button:hover {
+    background-color: #93E99A;
+    color: black;
+    text-shadow: none;
+    transition:  .4s;
+}
+
+h1.header {
+    margin-top: 2rem;
+}
+
+div.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

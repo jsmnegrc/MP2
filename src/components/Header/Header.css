@@ -1,9 +1,12 @@
+<<<<<<< HEAD:src/components/Header/Header.css
+=======
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+>>>>>>> 235653c44d6fbb59325789172fc68c091d9293d2:src/pages/Header.css
 #navigation {
   background-color: #17601d;
 }
@@ -42,7 +45,21 @@
 }
 
 div#social a {
+<<<<<<< HEAD:src/components/Header/Header.css
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
+    transition: transform .2s;
+=======
   font-size: 1.5rem;
   color: white;
   margin-right: 20px;
+>>>>>>> 235653c44d6fbb59325789172fc68c091d9293d2:src/pages/Header.css
+}
+
+div#social a:hover {
+    color:  #93e99a;
+    text-shadow: none;
+    transition:  .4s;
+    box-shadow: 1px 1px;
 }
