@@ -13,17 +13,10 @@ const Hero = () => {
     const video = videoRef.current;
 
     if (video) {
-
       const playPromise = video.play();
 
       if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-
-          })
-          .catch(error => {
-
-          });
+        playPromise.then(() => {}).catch((error) => {});
       }
     }
   }, []);
@@ -38,7 +31,6 @@ const Hero = () => {
           <div className="video-container">
             <video
               ref={videoRef}
-              width="100%"
               poster={VideoPoster}
               className="v-poster"
               autoPlay
@@ -49,12 +41,8 @@ const Hero = () => {
           </div>
         </Row>
         <Row className="align-self-center" id="Hero-Text">
-          <h1 className="hero-heading">
-            Urban Haven
-          </h1>
-          <h3 className="hero-subheading">
-          “Where Dreams Find a Home”
-          </h3>
+          <h1 className="hero-heading">Urban Haven</h1>
+          <h3 className="hero-subheading">“Where Dreams Find a Home”</h3>
         </Row>
 
         <div className="container">

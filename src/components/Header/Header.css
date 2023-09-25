@@ -1,46 +1,60 @@
+<<<<<<< HEAD:src/components/Header/Header.css
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+>>>>>>> 235653c44d6fbb59325789172fc68c091d9293d2:src/pages/Header.css
 #navigation {
-    background-color: #17601D;
+  background-color: #17601d;
 }
 
 .logo,
 .navi {
-    width: 80px;
-    height: 100px;
-    display: flex;
-    
+  width: 80px;
+  height: 100px;
+  display: flex;
 }
 
 .logo {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .navbar-nav {
-    gap: 1rem;
+  gap: 1rem;
 }
 
 .navbar-nav .nav-link {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .navbar-nav .nav-link:hover {
-    color:  #93e99a;
-    text-shadow: none;
-    transition:  .4s;
-    box-shadow: 1px 1px;
+  color: #93e99a;
+  text-shadow: none;
+  transition: 0.4s;
+  box-shadow: 1px 1px;
 }
 
 .navbar-nav .nav-link:active,
 .navbar-nav .nav-link:focus {
-    color: white;
-    text-shadow: none;
+  color: white;
+  text-shadow: none;
 }
 
 div#social a {
+<<<<<<< HEAD:src/components/Header/Header.css
     font-size: 1.5rem;
     color: white;
     margin-right: 20px;
     transition: transform .2s;
+=======
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 20px;
+>>>>>>> 235653c44d6fbb59325789172fc68c091d9293d2:src/pages/Header.css
 }
 
 div#social a:hover {
