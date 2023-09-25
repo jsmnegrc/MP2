@@ -4,6 +4,7 @@ import Property from "./pages/Properties/Property";
 import Community from "./pages/Community/Community";
 import News from "./pages/News/News";
 import Contact from "./pages/Contact/Contact";
+import Propertydetails from "./pages/Propertydetails/Propertydetails";
 
 const routes = [
   {
@@ -17,6 +18,10 @@ const routes = [
   {
     path: "/property",
     element: <Property />,
+  },
+  {
+    path: "/propertydetails/:externalID",
+    element: <Propertydetails />,
   },
   {
     path: "/community",

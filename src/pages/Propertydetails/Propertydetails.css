@@ -1,0 +1,10 @@
+#propertydetails .banner-details {
+  height: 300px;
+  overflow: hidden;
+}
+
+#propertydetails .banner-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

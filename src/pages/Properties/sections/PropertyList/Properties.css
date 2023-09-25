@@ -3,7 +3,17 @@
 section#property .card {
   height: 100%;
 }
-
+.car-list {
+  border: 1px solid black;
+}
+.card-img {
+  border-radius: 0;
+  border: 0;
+  height: 240px;
+}
+.card-list .card-img {
+  transition: 0.5s ease;
+}
 li {
   list-style: none;
 }
@@ -14,7 +24,10 @@ li {
 }
 .img-agent {
   max-width: 50px;
-  height: auto;
+  height: 50px;
   object-fit: cover;
   border-radius: 99px;
+}
+.btn-item {
+  z-index: 0;
 }
