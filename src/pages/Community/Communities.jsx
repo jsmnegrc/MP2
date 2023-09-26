@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Container as BootstrapContainer,Button,Row as BootstrapRow,Col as BootstrapCol,} from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "./Communities.css"
+
+
 
 const Banner = ({
   purpose,
@@ -12,25 +15,29 @@ const Banner = ({
   LinkName,
   imageUrl,
 }) => (
-  <div className="d-flex flex-wrap justify-content-center align-items-center m-5">
-    <img src={imageUrl} width={500} height={300} alt="banner" />
-    <div style={{ padding: "5px" }}>
-      <p className="text-muted font-weight-medium">{purpose}</p>
-      <h3 className="font-weight-bold">
-        {title1}
-        <br />
-        {title2}
-      </h3>
-      <p className="font-size-lg pt-3 pb-3 text-dark">
-        {desc1}
-        <br />
-        {desc2}
-      </p>
-      <Button className="btn btn-primary btn-lg">
+  <Row className="m-5">
+    <Col className="cbanner" xs={12} md={6}>
+      <img src={imageUrl} width={300} height={200} alt="banner" className="image-left"/>
+    </Col>
+    <Col xs={12} md={6}>
+      <div style={{ padding: "5px" }}>
+        <p className="text-muted font-weight-medium">{purpose}</p>
+        <h3 className="font-weight-bold">
+          {title1}
+          <br />
+          {title2}
+        </h3>
+        <p className="font-size-lg pt-3 pb-3 text-dark">
+          {desc1}
+          <br />
+          {desc2}
+        </p>
+      <Button variant="success">
         <Link to={LinkName}>{ButtonText}</Link>
       </Button>
     </div>
-  </div>
+    </Col>
+  </Row>
 );
 
 function Communities({ propertiesForSale }) {
@@ -57,33 +64,8 @@ function Communities({ propertiesForSale }) {
         LinkName="/search?purpose=for-sale"
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
-      {/* Add the missing import for Flex */}
-      {/* Import Flex from wherever you are using it */}
-      <BootstrapContainer>
-        <BootstrapRow>
-            {propertiesForSale.map((property) => (
-            <Property property={property} key={property.id} />
-            ))}
-        </BootstrapRow>
-      </BootstrapContainer>
-    </div>
-  );
-}
-
-export async function getStaticProps() {
-  const propertyForSale = await fetchApi(
-    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6`
-  );
-  const propertyForRent = await fetchApi(
-    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`
-  );
-
-  return {
-    props: {
-      propertiesForSale: propertyForSale?.hits,
-      propertiesForRent: propertyForRent?.hits,
-    },
-  };
-}
-
+      </div>
+  )
+};
+      
 export default Communities;

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
 import Communities from "./Communities";
+import "./Community.css";
+import GoogleMap from "../../components/GoogleMap"
 
 const Community = ({ showScrollIcon }) => {
   const scrollToTop = () => {
@@ -13,7 +15,7 @@ const Community = ({ showScrollIcon }) => {
   return (
     <BootstrapContainer className="content">
       <div id="content-header">
-        <h1 className="header">Choose your Urban Community </h1>
+        <h1 className="header">Choose your Urban Community</h1>
         <div className="flexbox">
           <BootstrapRow className="header-content">
             <BootstrapCol xs={12}>
@@ -32,19 +34,27 @@ const Community = ({ showScrollIcon }) => {
         </div>
       </div>
 
-      <section className="main-container">
-        <div className="container">
-          <div className="banner">
-          <h1>this is where the community will be displayed</h1>
-          </div>
+      <div className="banner">
+        <Communities className="dbanner" />
+      </div>
 
+      <div className="map">
+        {/* Insert the complete iframe code here */}
+        <div style={{ width: "100%" }}>
+          <iframe
+            width="100%"
+            height="600"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=The%20Exchange%20Building%20-%20Al%20Maryah%20Island%20-%20Abu%20Dhabi%20Global%20Market%20Square%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates+(Urban%20Haven)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.maps.ie/population/">Find Population on Map</a>
+          </iframe>
         </div>
-      </section>
-
-      <Communities />
-
-      <div>
-        <h3>Google Map</h3>
+        {/* End of iframe code */}
+        <GoogleMap />
       </div>
 
       <div>

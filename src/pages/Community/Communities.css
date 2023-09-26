@@ -1,0 +1,32 @@
+.btn-lg {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn-lg:hover {
+    color: #93e99a;
+    text-shadow: none;
+    transition: 0.4s;
+    box-shadow: 1px 1px;
+}
+
+.btn-lg .btn-lg-link:active,
+.btn-lg .btn-lg-link:focus {
+  color: white;
+  text-shadow: none;
+}
+
+.main-container {
+width: 100%
+}
+
+div.banner {
+    width: 100%;
+    padding: 0;
+}
+
+.image-left {
+    float: left; 
+    margin-right: 20px;
+  }

@@ -5,6 +5,10 @@ import Footer from "./components/Footer/Footer";
 import routes from "./routes";
 
 const App = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <Header />
@@ -24,6 +28,11 @@ const App = () => {
         <Outlet />
       </main>
       <Footer />
+      {window.scrollY > 100 && ( 
+        <button className="scroll-to-top" onClick={handleScrollToTop}>
+          Scroll to Top
+        </button>
+      )}
     </>
   );
 };
