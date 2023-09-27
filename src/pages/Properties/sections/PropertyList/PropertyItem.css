@@ -1,0 +1,58 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+section#property .card {
+  height: 100%;
+}
+.car-list {
+  border: 1px solid black;
+}
+.card-img {
+  border-radius: 0;
+  border: 0;
+  height: 240px;
+}
+.card-list .card-img {
+  transition: 0.5s ease;
+}
+li {
+  list-style: none;
+}
+.card-item {
+  padding-right: 15px;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  margin-right: 20px;
+}
+.img-agent {
+  max-width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 99px;
+}
+.btn-item {
+  z-index: 0;
+}
+
+/* Style the property type list */
+.property-type-list {
+  list-style: none;
+  padding: 6px;
+  border: 2px solid #198754;
+  margin-top: 7px;
+}
+
+.property-type-list li {
+  margin-bottom: 2px;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.property-type-list li.active {
+  background-color: #198754; /* Background color when selected */
+  color: white; /* Text color when selected */
+}
+
+.property-type-list li:hover {
+  background-color: #198754; /* Background color on hover */
+  color: black;
+}

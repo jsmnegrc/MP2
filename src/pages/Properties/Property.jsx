@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "./sections/Hero/Hero";
-import Properties from "./sections/PropertyList/Properties";
+import PropertyItem from "./sections/PropertyList/PropertyItem";
 
 const Property = () => {
   return (
     <>
       <Hero />
-      <Properties />
+      <PropertyItem />
     </>
   );
 };

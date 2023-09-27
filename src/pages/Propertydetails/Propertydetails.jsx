@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import axios from "axios";
 import "./Propertydetails.css";
+import axios from "axios";
+import http from "../../library/http";
 
 const Propertydetails = () => {
   const [propertydetails, setPropertydetails] = useState({});
@@ -12,7 +13,19 @@ const Propertydetails = () => {
     getPropertydetails(params.externalID);
   }, []);
 
-  async function getPropertydetails(externalID) {}
+  async function getPropertydetails(externalID) {
+    try {
+      const response = await http.get("/properties/detail", {
+        params: {
+          externalID: externalID, // Use the passed externalID parameter
+        },
+      });
+
+      setPropertydetails(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <>
