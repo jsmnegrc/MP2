@@ -5,7 +5,7 @@ import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
 import Communities from "./Communities";
 import "./Community.css";
-import GoogleMap from "../../components/GoogleMap";
+import GoogleMap from "../../../components/GoogleMap";
 
 const Community = ({ showScrollIcon }) => {
   const scrollToTop = () => {
@@ -28,7 +28,7 @@ const Community = ({ showScrollIcon }) => {
               Where everyone is Connected to life’s essentials
             </BootstrapCol>
             <BootstrapCol xs={12}>
-              Owning your home is a Convenient & guided journey
+              Buying or renting your home is a Convenient & guided journey
             </BootstrapCol>
           </BootstrapRow>
         </div>
@@ -53,7 +53,6 @@ const Community = ({ showScrollIcon }) => {
             <a href="https://www.maps.ie/population/">Find Population on Map</a>
           </iframe>
         </div>
-        {/* End of iframe code */}
         <GoogleMap />
       </div>
 
