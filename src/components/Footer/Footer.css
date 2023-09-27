@@ -19,3 +19,21 @@ footer ul {
   .copyright {
     color: #000000;
   } 
+
+  div#social a {
+    font-size: 1.5rem;
+    color: #17601d;
+    margin-right: 20px;
+    transition: transform .2s;
+}
+
+div#social a:hover {
+    color:  #000000;
+    text-shadow: none;
+    transition:  .4s;
+    box-shadow: 1px 1px;
+}
+
+.logo {
+  width: 60px;
+}
