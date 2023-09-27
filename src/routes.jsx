@@ -1,10 +1,8 @@
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Property from "./pages/Properties/Property";
 import Community from "./pages/Community/Community";
-import News from "./pages/News/News";
 import Contact from "./pages/Contact/Contact";
-import Properties from "./pages/Community/CommunitytItem";
+import Property from "./pages/Properties/Property";
 
 
 const routes = [
@@ -22,11 +20,7 @@ const routes = [
   },
   {
     path: "/properties",
-    element: <Properties />,
-  },
-  {
-    path: "/news",
-    element: <News />,
+    element: <Property />,
   },
   {
     path: "/contact",

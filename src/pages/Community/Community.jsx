@@ -5,7 +5,7 @@ import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
 import Communities from "./Communities";
 import "./Community.css";
-import GoogleMap from "../../components/GoogleMap"
+import GoogleMap from "../../components/GoogleMap";
 
 const Community = ({ showScrollIcon }) => {
   const scrollToTop = () => {
