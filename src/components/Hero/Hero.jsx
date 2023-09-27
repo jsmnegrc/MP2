@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="container">
   <div className="row">
     <div className="col-12 col-md-4">
-      <div className="align-self-center flexCounter stat">
+      <div className="align-self-center flexCounter stat" id="counterbg">
         <span>
           <CountUp start={7000} end={9001} duration={4} />
           <span>+</span>

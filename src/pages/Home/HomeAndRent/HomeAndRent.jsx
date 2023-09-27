@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./Communities.css"
+import "./HomeandRent.css"
+import "./HomeAndRentFetch"
 
 
 
@@ -40,11 +41,10 @@ const Banner = ({
   </Row>
 );
 
-function Communities({ propertiesForSale }) {
+function HomeAndRent({ propertiesForSale }) {
   return (
     <div>
-      <h1>hello naiinis na ko please gumana ka na</h1>
-      <Banner
+      <Banner className=""
         purpose="RENT A HOME"
         title1="Rental Homes for"
         title2="Everyone"
@@ -68,4 +68,4 @@ function Communities({ propertiesForSale }) {
   )
 };
       
-export default Communities;
+export default HomeAndRent;

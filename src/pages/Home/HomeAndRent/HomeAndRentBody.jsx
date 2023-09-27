@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
-import { Link } from "react-router-dom";
+import React from "react";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Container as BootstrapContainer, Button, Row as BootstrapRow, Col as BootstrapCol } from "react-bootstrap";
-import Communities from "./Communities";
-import "./Community.css";
-import GoogleMap from "../../../components/GoogleMap";
+import "./HomeAndRentBody.css";
+import HomeAndRent from "./HomeAndRent";
 
-const Community = ({ showScrollIcon }) => {
+const HomeAndRentBody = ({ showScrollIcon }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
+    <div className="container">
     <BootstrapContainer className="content">
       <div id="content-header">
         <h1 className="header">Choose your Urban Community</h1>
@@ -35,15 +33,21 @@ const Community = ({ showScrollIcon }) => {
       </div>
 
       <div className="banner">
-        <Communities className="dbanner" />
+        <HomeAndRent className="dbanner" />
       </div>
 
+      <div>
+        <Button variant="success" className="Booking-button">
+          Book Tripping
+        </Button>
+      </div>
+      
       <div className="map">
-        {/* Insert the complete iframe code here */}
-        <div style={{ width: "100%" }}>
+        <div style={{ height: "400px", width: "100%" }}>
           <iframe
+            title="Google Map"
             width="100%"
-            height="600"
+            height="100%"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
@@ -53,13 +57,6 @@ const Community = ({ showScrollIcon }) => {
             <a href="https://www.maps.ie/population/">Find Population on Map</a>
           </iframe>
         </div>
-        <GoogleMap />
-      </div>
-
-      <div>
-        <Button variant="success" className="Booking-button">
-          Book Tripping
-        </Button>
       </div>
 
       <div>
@@ -70,7 +67,8 @@ const Community = ({ showScrollIcon }) => {
         )}
       </div>
     </BootstrapContainer>
+    </div>
   );
 };
 
-export default Community;
+export default HomeAndRentBody;

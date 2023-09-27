@@ -1,6 +1,6 @@
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Community from "./pages/Home/Community/Community";
+import HomeAndRentBody from "./pages/Home/HomeAndRent/HomeAndRentBody";
 import Contact from "./pages/Contact/Contact";
 import Property from "./pages/Properties/Property";
 

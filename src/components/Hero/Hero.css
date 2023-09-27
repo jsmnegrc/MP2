@@ -29,43 +29,42 @@
   margin: 0;
 }
 
-.align-self-center {
-  text-align: center;
-  color: #ffffff;
-  padding: 20px;
-  justify-content: space-between;
-  opacity: 70%;
-}
-#Hero-Text {
-  padding: 0;
-}
-
 .hero-heading {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 3rem;
   color: #ffffff;
   font-weight: bold;
 }
 
 .hero-subheading {
-  font-size: 3rem;
-  color: #93e99a;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
   margin-top: 10px;
   font-style: italic;
 }
 
 .stat {
-  background-color: #17601D;
+  background-color: #ffffff;
+  padding: 0;
+  text-align: center;
+  padding: 5px;
+  justify-content: space-between;
+  opacity: 75%;
 }
 
 .stat>:nth-child(1) {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .stat>:nth-child(1)>:last-child {
   color: #cfc536;
 }
 
-
+.stat span {
+  color: #17601D;
+  font-weight: bold;
+}
 
 
 
