@@ -4,13 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo_company.png";
+import "./Header.css";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaYoutube,
   FaTwitterSquare,
 } from "react-icons/fa";
-import "./Header.css";
 
 const Header = () => {
   return (
@@ -33,7 +33,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/homeandrent" className="abt">
                 Community
               </Nav.Link>
-              <Nav.Link as={Link} to="/property" className="price">
+              <Nav.Link as={Link} to="/property" className="properties">
                 Properties
               </Nav.Link>
               <Nav.Link as={Link} to="/contact" className="con">

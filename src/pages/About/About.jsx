@@ -1,11 +1,11 @@
 import React from "react";
-import AboutHero from "./Hero/Hero";
+import Hero from "./Hero/Hero";
 import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
     <>
-      <AboutHero />
+      <Hero />
       <Container className="my-5">
         <Row>
           <Col lg={6}>

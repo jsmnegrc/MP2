@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Container, Row, Col, Carousel, ListGroup } from "react-bootstrap";
 import "./Propertydetails.css";
 import http from "../../library/http";
+import PropertyContact from "./PropertyContact";
 
 const Propertydetails = () => {
   const [propertydetails, setPropertydetails] = useState({});
@@ -64,10 +65,13 @@ const Propertydetails = () => {
             </Col>
           </Row>
           <div
+            className=""
             dangerouslySetInnerHTML={{ __html: propertydetails.description }}
           ></div>
         </div>
       </Container>
+
+      <PropertyContact />
     </>
   );
 };

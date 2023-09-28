@@ -2,7 +2,8 @@
   height: 600x;
   background-color: #f8f4f4;
 }
-.box-container2 h2,
+.row .col .box-container2,
+.contact,
 p {
   color: black;
 }

@@ -3,3 +3,9 @@
   width: 100%;
   object-fit: cover;
 }
+.details-container {
+  background-color: #f8f4f4;
+}
+.details.contact {
+  background-color: #f8f4f4;
+}

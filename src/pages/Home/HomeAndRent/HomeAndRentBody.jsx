@@ -8,6 +8,7 @@ import {
 } from "react-bootstrap";
 import "./HomeAndRentBody.css";
 import HomeAndRent from "./HomeAndRent";
+import "./HomeAndRentBody.css";
 
 const HomeAndRentBody = ({ showScrollIcon }) => {
   const scrollToTop = () => {

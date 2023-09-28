@@ -4,15 +4,12 @@ import HomeAndRentBody from "./pages/Home/HomeAndRent/HomeAndRentBody";
 import Contact from "./pages/Contact/Contact";
 import Property from "./pages/Properties/Property";
 import Propertydetails from "./pages/Propertydetails/Propertydetails";
+import RentList from "./components/RentList";
 
 const routes = [
   {
     path: "/",
     element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
   {
     path: "/about",
@@ -33,6 +30,10 @@ const routes = [
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/hero",
+    element: <RentList />,
   },
 ];
 
