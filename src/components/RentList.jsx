@@ -49,7 +49,6 @@ const RentList = () => {
     <div>
       <h1>Rent List</h1>
       <ul>
-        {/* Display a list of rental properties */}
         {rentalProperties.map((property) => (
           <li key={property.id}>
             <h2>{property.title}</h2>

@@ -1,0 +1,8 @@
+.box-container {
+  height: 600x;
+  background-color: #f8f4f4;
+}
+.box-container2 h2,
+p {
+  color: black;
+}

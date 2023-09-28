@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
+<<<<<<< HEAD
 import Community from "./HomeAndRent/HomeAndRentBody";
+=======
+>>>>>>> 58fa522a76f72767f5a2269e176570cd09d803eb
 import "./Home.css";
-
-
 
 const Home = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -31,7 +32,6 @@ const Home = () => {
   return (
     <>
       <Hero className="hero-component" />
-      <Community showScrollIcon={showScrollIcon} />
     </>
   );
 };
