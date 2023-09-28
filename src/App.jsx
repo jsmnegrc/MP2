@@ -28,7 +28,7 @@ const App = () => {
         <Outlet />
       </main>
       <Footer />
-      {window.scrollY > 100 && ( 
+      {window.scrollY > 100 && (
         <button className="scroll-to-top" onClick={handleScrollToTop}>
           Scroll to Top
         </button>

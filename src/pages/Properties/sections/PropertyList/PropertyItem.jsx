@@ -8,6 +8,7 @@ import {
   ListGroup,
   Badge,
   Button,
+  Form,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./PropertyItem.css";
@@ -102,25 +103,25 @@ const PropertyItem = () => {
   return (
     <Container fluid>
       <Row>
-        <Col xs={2} className="filter-container">
+        <Col xs={12} md={2} className="filter-container">
           <div>
-            <p className="p-2 fw-bold">Select Property Type</p>
-            <ul className="property-type-list">
+            <h5>Select Property Type</h5>
+            <Form.Select
+              id="propertyCategory"
+              name="propertyCategory"
+              className="property-category-dropdown"
+              onChange={(e) => handlePropertyTypeChange(e.target.value)}
+              value={selectedPropertyType}
+            >
               {propertyCategories.map((category) => (
-                <li
-                  key={category.id}
-                  className={
-                    selectedPropertyType === category.id ? "active" : ""
-                  }
-                  onClick={() => handlePropertyTypeChange(category.id)}
-                >
+                <option key={category.id} value={category.id}>
                   {category.label}
-                </li>
+                </option>
               ))}
-            </ul>
+            </Form.Select>
           </div>
         </Col>
-        <Col xs={9}>
+        <Col xs={12} md={9}>
           {propertyList.length === 0 ? (
             <p>Loading...</p>
           ) : (
@@ -129,7 +130,7 @@ const PropertyItem = () => {
                 {propertyList.map((property) => (
                   <Col className="mb-4" key={property.id} xs={12} md={6} lg={4}>
                     <Card
-                      className="card-list"
+                      className="card-list mt-4"
                       style={{
                         height: "100%",
                         display: "flex",
@@ -207,7 +208,7 @@ const PropertyItem = () => {
                             <span> Area: {property.area}</span>
                           </li>
                         </ListGroup>
-                        <Card.Footer className="footer p-3 d-flex">
+                        <Card.Footer className="footer p-3 d-flex fixed-height-footer">
                           <img
                             className="img-agent mx-2"
                             src={property.agency.logo.url}

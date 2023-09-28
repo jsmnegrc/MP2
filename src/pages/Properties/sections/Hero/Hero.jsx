@@ -5,7 +5,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <section id="news" className="mb-4">
-      <div className="banner mb-4">
+      <div className="banner-property mb-4">
         <img src={Banner} />
         <div className="overlay"></div>
         <div className="hero-text mb-5">

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../About/Hero/Hero";
+import Hero from "./Hero/Hero";
 import { Container, Row, Col } from "react-bootstrap";
 import "./About.css"
 
@@ -22,8 +22,8 @@ const About = () => {
             <p className="abt">
               With years of experience in the real estate industry, we have
               established a reputation for providing exceptional service,
-              delivering valuable insights, and guiding our clients through every
-              step of the real estate journey.
+              delivering valuable insights, and guiding our clients through
+              every step of the real estate journey.
             </p>
             <br />
             <p className="abt">
