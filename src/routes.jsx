@@ -1,9 +1,8 @@
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import HomeAndRentBody from "./pages/Home/HomeAndRent/HomeAndRentBody";
 import Contact from "./pages/Contact/Contact";
 import Property from "./pages/Properties/Property";
-
+import RentList from "./components/RentList";
 
 const routes = [
   {
@@ -21,6 +20,10 @@ const routes = [
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/search",
+    element: <RentList />,
   },
 ];
 

@@ -55,6 +55,7 @@ function HomeAndRent({ propertiesForSale }) {
         LinkName="/search?purpose=for-rent"
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
       />
+
       <Banner
         purpose="BUY A HOME"
         title1=" Find, Buy & Own Your"
