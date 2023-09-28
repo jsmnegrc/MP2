@@ -6,30 +6,25 @@ const RentList = () => {
   const [isRequestPending, setIsRequestPending] = useState(false);
   const [rentalProperties, setRentalProperties] = useState([]);
 
-  // Function to make the API request
   const fetchData = async () => {
     try {
-      // Check if a request is currently pending
       if (!isRequestPending) {
-        // Set the request as pending
         setIsRequestPending(true);
 
-        // Make the API request
         const response = await axios.get('https://bayut.p.rapidapi.com/properties', {
           headers: {
             'X-RapidAPI-Host': 'bayut.p.rapidapi.com',
-            'X-RapidAPI-Key': 'YOUR_RAPIDAPI_KEY', // Replace with your RapidAPI key
+            'X-RapidAPI-Key': 'de41642316msh4c744048a6734eep100787jsn9bba0065b25f',
           },
           params: {
             purpose: 'for-rent',
           },
         });
 
-        // Update rentalProperties with the fetched data
+        console.log('API Response:', response.data);
+
         setRentalProperties(response.data);
-
         setLastRequestTime(Date.now());
-
         setIsRequestPending(false);
       }
     } catch (error) {

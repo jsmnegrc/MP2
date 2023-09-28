@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
-import Community from "./HomeAndRent/HomeAndRentBody";
+import HomeAndRentBody from "./HomeAndRent/HomeAndRentBody";
 import "./Home.css";
 
 const Home = () => {
@@ -29,6 +29,7 @@ const Home = () => {
   return (
     <>
       <Hero className="hero-component" />
+      <HomeAndRentBody />
     </>
   );
 };

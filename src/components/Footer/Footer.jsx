@@ -4,8 +4,8 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FaInstagramSquare } from 'react-icons/fa';
-import { FaTwitterSquare } from 'react-icons/fa';
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 import Logo from "../../assets/CompanyLogo.png";
 import "./Footer.css";
 
@@ -16,43 +16,58 @@ const Footer = () => {
         <Row className="tfooter">
           <Col md className="col1">
             <h4>Quick Links</h4>
-              <ul>
-                <li>
-                  <Link to="/" className="footer-link">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about" className="footer-link">About</Link>
-                </li>
-                <li>
-                  <Link to="/properties" className="footer-link">Properties</Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="footer-link">Contact</Link>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <Link to="/" className="footer-link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="footer-link">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/properties" className="footer-link">
+                  Properties
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="footer-link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </Col>
 
           <Col md className="Col2">
             <div className="address">
-            <h4>Address</h4>
-            <p className="add">The Exchange Building<br /> Al Maryah Island<br />
-                 Abu Dhabi Global Market Square <br /> Abu Dhabi - United Arab Emirates</p>
+              <h4>Address</h4>
+              <p className="add">
+                The Exchange Building
+                <br /> Al Maryah Island
+                <br />
+                Abu Dhabi Global Market Square <br /> Abu Dhabi - United Arab
+                Emirates
+              </p>
             </div>
           </Col>
-          
+
           <Col md className="Col3">
             <div className="contact">
-            <h4>Contact</h4>
-            <p className="con">
-               +123456789<br />
-               urbanhaven@gmail.com<br />
-               Mon - Fri - 9:00 am - 5:00 pm <br />
-               Sat - 9:00 am - 12:00 nn
-            </p>
+              <h4 className="text-light">Contact</h4>
+              <p className="con">
+                +123456789
+                <br />
+                urbanhaven@gmail.com
+                <br />
+                Mon - Fri - 9:00 am - 5:00 pm <br />
+                Sat - 9:00 am - 12:00 nn
+              </p>
             </div>
           </Col>
         </Row>
-        
+
         <Row className="fbottom">
           <Col md className="icons">
             <div id="fsocial">
@@ -78,7 +93,9 @@ const Footer = () => {
           </Col>
 
           <Col md className="align-self-center">
-            <p className="copyright">&copy; Urban Haven - All rights reserved</p>
+            <p className="copyright">
+              &copy; Urban Haven - All rights reserved
+            </p>
           </Col>
         </Row>
       </Container>

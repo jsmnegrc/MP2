@@ -1,67 +1,66 @@
 .main-container {
-width: 100%
+  width: 100%;
 }
 
 div.banner {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .image-left {
-    float: left; 
-    margin-right: 20px;
-  }
+  float: left;
+  margin-right: 20px;
+}
 
-  .custom-button {
-    background-color: #17601D;
-  }
+.custom-button {
+  background-color: #17601d;
+}
 
-  .custom-link {
-    color: #FFFFFF;
-  }
+.custom-link {
+  color: #ffffff;
+}
 
 .banner {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .banner .purpose {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .banner .title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .banner .desc {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .banner .btn {
-    background-color: #17601D;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-  }
-  
-  .banner .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .banner .image {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.banner .purpose {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.banner .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.banner .desc {
+  font-size: 18px;
+  color: #555;
+}
+
+.banner .btn {
+  background-color: #17601d;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.banner .btn:hover {
+  background-color: #0056b3;
+}
+
+.banner .image {
+  max-width: 100%;
+  height: auto;
+}

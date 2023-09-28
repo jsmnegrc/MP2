@@ -3,8 +3,8 @@ import About from "./pages/About/About";
 import HomeAndRentBody from "./pages/Home/HomeAndRent/HomeAndRentBody";
 import Contact from "./pages/Contact/Contact";
 import Property from "./pages/Properties/Property";
-import Propertydetails from "./pages/Propertydetails/Propertydetails";
 import RentList from "./components/RentList";
+import Propertydetails from "./pages/Propertydetails/Propertydetails";
 
 const routes = [
   {
