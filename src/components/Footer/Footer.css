@@ -3,84 +3,70 @@ footer.py-3 {
   color: #ffffff;
 }
 
-tfooter {
-  display:flex;
-  align-items: center;
-  justify-content: center
+.tfooter {
+  display: block;
 }
 
-.footer-link {
-    color: #ffffff;
-    text-decoration: none;
-    transition: transform .2s;
+.tfooter .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.2s;
 }
 
-.footer-link:hover {
-  color:  #000000;
+.tfooter .footer-link:hover {
+  color: #000000;
   text-shadow: none;
-  transition:  .4s;
+  transition: 0.4s;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer a, p {
-    text-decoration: none;
-    padding-left: 3rem;
-  }
-
-  div.Col2.col {
-    padding-left: 15rem;
-    
-  }
-
-  p.add {
-    color: #070707;
-    padding-left: 3rem;
-  }
-
-  div.Col3.col {
-    padding-left: 15rem;
-  }
-
-  p.con {
-    color: #070707;
-    padding-left: 3rem;
-  }
-  
-  .copyright {
-    padding-left: 10rem;
-    display:flex;
-  } 
-
-  div#fsocial a {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-right: 20px;
-    transition: transform .2s;
-    padding: 0;
+.tfooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-div#fsocial a:hover {
-    color:  #000000;
-    text-shadow: none;
-    transition:  .4s;
-    box-shadow: 1px 1px;
+.contact,
+.address {
+  float: right;
 }
 
-.fbottom {
-  display:flex;
-  align-items: center;
-  justify-content: center;
+.address {
+  padding-right: 3rem;
+}
+
+#fsocial a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 20px;
+  transition: transform 0.2s;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+#fsocial a:hover {
+  color: #000000;
+  text-shadow: none;
+  transition: 0.4s;
+  box-shadow: 1px 1px;
+}
+
+.icons {
+  padding-top: 1rem;
+  align-content: center;
 }
 
 .flogo {
-  padding-left: 10rem;
+  display: flex;
+  justify-content: right;
+  padding-right: 10rem;
 }
 
 .small-logo {
-  width: 100px;
+  width: 8rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: right;
+  align-content: center;
 }

@@ -4,8 +4,6 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./HomeandRent.css"
 import "./HomeAndRentFetch"
 
-
-
 const Banner = ({
   purpose,
   title1,
@@ -18,7 +16,7 @@ const Banner = ({
 }) => (
   <Row className="m-5">
     <Col className="cbanner" xs={12} md={6}>
-      <img src={imageUrl} width={300} height={200} alt="banner" className="image-left"/>
+      <img src={imageUrl} width={550} height={300} alt="banner" className="image-left"/>
     </Col>
     <Col xs={12} md={6}>
       <div style={{ padding: "5px" }}>
@@ -33,9 +31,12 @@ const Banner = ({
           <br />
           {desc2}
         </p>
-      <Button variant="success">
-        <Link to={LinkName}>{ButtonText}</Link>
-      </Button>
+        <Button variant="success" className="custom-button">
+          <Link to={LinkName} className="custom-link">
+            {ButtonText}
+          </Link>
+        </Button>
+
     </div>
     </Col>
   </Row>
@@ -44,7 +45,7 @@ const Banner = ({
 function HomeAndRent({ propertiesForSale }) {
   return (
     <div>
-      <Banner className=""
+      <Banner
         purpose="RENT A HOME"
         title1="Rental Homes for"
         title2="Everyone"

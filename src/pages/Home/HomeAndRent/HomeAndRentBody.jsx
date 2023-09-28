@@ -35,23 +35,13 @@ const HomeAndRentBody = ({ showScrollIcon }) => {
       <div className="banner">
         <HomeAndRent className="dbanner" />
       </div>
-
-      <div>
-        <Button variant="success" className="Booking-button">
-          Book Tripping
-        </Button>
-      </div>
       
       <div className="map">
-        <div style={{ height: "400px", width: "100%" }}>
+        <div style={{ height: "250px", width: "100%" }}>
           <iframe
             title="Google Map"
             width="100%"
             height="100%"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=The%20Exchange%20Building%20-%20Al%20Maryah%20Island%20-%20Abu%20Dhabi%20Global%20Market%20Square%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates+(Urban%20Haven)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           >
             <a href="https://www.maps.ie/population/">Find Population on Map</a>
