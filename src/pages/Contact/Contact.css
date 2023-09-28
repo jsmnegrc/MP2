@@ -14,3 +14,15 @@ p {
 .mb-5 {
   color: black;
 }
+
+label[for="phone"],
+[for="email"],
+[for="name"],
+[for="message"] {
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  color: #17601d;
+  background-color: #ffffff;
+}
