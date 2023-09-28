@@ -1,8 +1,15 @@
 .box-container {
   height: 600x;
-  background-color: #f8f4f4;
+  background-color: #17601d;;
 }
 .box-container2 h2,
 p {
+  color: black;
+}
+
+.ctext,
+.mt-5,
+.fw-bold,
+.mb-5 {
   color: black;
 }
