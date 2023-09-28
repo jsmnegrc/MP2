@@ -104,7 +104,7 @@ const PropertyItem = () => {
       <Row>
         <Col xs={2} className="filter-container">
           <div>
-            <p className="p-2 fw-bold">Select Property Type</p>
+            <p className="filter-search p-2 fw-bold">Select Property Type</p>
             <ul className="property-type-list">
               {propertyCategories.map((category) => (
                 <li
@@ -129,7 +129,7 @@ const PropertyItem = () => {
                 {propertyList.map((property) => (
                   <Col className="mb-4" key={property.id} xs={12} md={6} lg={4}>
                     <Card
-                      className="card-list"
+                      className="card-list mt-4"
                       style={{
                         height: "100%",
                         display: "flex",
@@ -207,7 +207,7 @@ const PropertyItem = () => {
                             <span> Area: {property.area}</span>
                           </li>
                         </ListGroup>
-                        <Card.Footer className="footer p-3 d-flex">
+                        <Card.Footer className="footer p-3 d-flex fixed-height-footer">
                           <img
                             className="img-agent mx-2"
                             src={property.agency.logo.url}

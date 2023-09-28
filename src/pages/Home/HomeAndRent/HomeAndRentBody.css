@@ -1,0 +1,27 @@
+.content {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1.header {
+  font-weight: bold;
+  color: #17601D;
+}
+
+div.col-12 {
+  font-weight: bold;
+  color: #17601D;
+}
+
+.book .btn-success {
+  background-color: #17601D;
+}
+
+.booking a.custom-link {
+  text-decoration: none; 
+  color: #ffffff;
+  font-size: 18px; 
+}

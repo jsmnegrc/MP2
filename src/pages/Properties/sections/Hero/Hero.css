@@ -1,6 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-section#news .banner {
+section#news .banner-property {
   height: 400px;
   overflow: hidden;
   position: relative;
@@ -10,7 +10,7 @@ section#news .banner {
   color: white;
 }
 
-section#news .banner .overlay {
+section#news .banner-property .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@ section#news .banner .overlay {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-section#news .banner img {
+section#news .banner-property img {
   position: absolute;
   top: 0;
   left: 0;
