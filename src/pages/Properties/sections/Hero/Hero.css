@@ -43,3 +43,6 @@ p {
 .hero-title {
   font-weight: 900px;
 }
+.hero-text p {
+  color: white;
+}

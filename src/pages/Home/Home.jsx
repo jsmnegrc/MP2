@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
-import Community from "../Community/Community";
 import "./Home.css";
-
-
 
 const Home = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -31,7 +28,6 @@ const Home = () => {
   return (
     <>
       <Hero className="hero-component" />
-      <Community showScrollIcon={showScrollIcon} />
     </>
   );
 };

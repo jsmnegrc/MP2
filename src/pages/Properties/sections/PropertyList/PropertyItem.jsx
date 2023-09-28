@@ -104,9 +104,7 @@ const PropertyItem = () => {
       <Row>
         <Col xs={2} className="filter-container">
           <div>
-            <label className="p-2 fw-bold text-decoration-underline">
-              Select Property Type
-            </label>
+            <p className="p-2 fw-bold">Select Property Type</p>
             <ul className="property-type-list">
               {propertyCategories.map((category) => (
                 <li
