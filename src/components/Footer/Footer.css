@@ -1,8 +1,24 @@
+footer.py-3 {
+  background-color: #17601d;
+  color: #ffffff;
+}
 
+tfooter {
+  display:flex;
+  align-items: center;
+  justify-content: center
+}
 
 .footer-link {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+    transition: transform .2s;
+}
+
+.footer-link:hover {
+  color:  #000000;
+  text-shadow: none;
+  transition:  .4s;
 }
 
 footer ul {
@@ -12,28 +28,59 @@ footer ul {
   }
   
   footer a, p {
-    color: #000000;
     text-decoration: none;
+    padding-left: 3rem;
+  }
+
+  div.Col2.col {
+    padding-left: 15rem;
+    
+  }
+
+  p.add {
+    color: #070707;
+    padding-left: 3rem;
+  }
+
+  div.Col3.col {
+    padding-left: 15rem;
+  }
+
+  p.con {
+    color: #070707;
+    padding-left: 3rem;
   }
   
   .copyright {
-    color: #000000;
+    padding-left: 10rem;
+    display:flex;
   } 
 
-  div#social a {
+  div#fsocial a {
     font-size: 1.5rem;
-    color: #17601d;
+    color: #ffffff;
     margin-right: 20px;
     transition: transform .2s;
+    padding: 0;
 }
 
-div#social a:hover {
+div#fsocial a:hover {
     color:  #000000;
     text-shadow: none;
     transition:  .4s;
     box-shadow: 1px 1px;
 }
 
-.logo {
-  width: 60px;
+.fbottom {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flogo {
+  padding-left: 10rem;
+}
+
+.small-logo {
+  width: 100px;
 }

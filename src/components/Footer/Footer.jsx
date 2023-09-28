@@ -6,18 +6,16 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
-import "../../assets/UB Logo.png";
+import Logo from "../../assets/CompanyLogo.png";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="py-3">
       <Container>
-        <Row>
-          <Col>
+        <Row className="tfooter">
+          <Col className="col1">
             <h5>Quick Links</h5>
-            </Col>
-            <Row>
             <nav>
               <ul>
                 <li>
@@ -27,25 +25,35 @@ const Footer = () => {
                   <Link to="/about" className="footer-link">About</Link>
                 </li>
                 <li>
-                  <Link to="/community" className="footer-link">Community</Link>
-                </li>
-                <li>
-                  <Link to="/pricing" className="footer-link">Pricing</Link>
-                </li>
-                <li>
-                  <Link to="/news" className="footer-link">News</Link>
+                  <Link to="/properties" className="footer-link">Properties</Link>
                 </li>
                 <li>
                   <Link to="/contact" className="footer-link">Contact</Link>
                 </li>
               </ul>
             </nav>
-          </Row>
-          </Row>
+            </Col>
 
-          <Row>
+          <Col className="Col2">
+            <h5>Address</h5>
+            <p className="add">The Exchange Building <br />
+                Al Maryah Island - Abu Dhabi Global Market Square - Abu Dhabi <br /> - United Arab Emirates</p>
+          </Col>
+          
+          <Col className="Col3">
+            <h5>Contact</h5>
+            <p className="con">
+               +123456789<br />
+               urbanhaven@gmail.com<br />
+               Mon - Fri - 9:00 am - 5:00 pm <br />
+               Sat - 9:00 am - 12:00 nn
+               </p>
+          </Col>
+          </Row>
+          
+          <Row className="fbottom">
             <Col>
-          <div id="social">
+          <div id="fsocial">
             <a href="/">
               <FaFacebookSquare className="fb" />
             </a>
@@ -62,14 +70,13 @@ const Footer = () => {
           </Col>
 
           <Col>
-          <a href="/" className="d-flex align-items-center">
-              <img alt="logo" src="UB Logo.png" width="30px" />
-              <span className="ms-3 h5 font-weight-bold">Urban Haven</span>
-            </a>
+          <Link as={Link} to="/" className="flogo">
+              <img src={Logo} alt="logo" className="Logo small-logo"/>
+            </Link>
           </Col>
 
           <Col className="align-self-center">
-            <p className="copyright">Copyright © 2023 Urban Haven | All rights reserved</p>
+            <p className="copyright">&copy;Urban Haven - All rights reserved</p>
           </Col>
         </Row>
       </Container>
