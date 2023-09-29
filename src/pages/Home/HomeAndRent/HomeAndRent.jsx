@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import "./HomeAndRent.css";
-import "./HomeAndRentFetch";
 
 const Banner = ({
   purpose,
@@ -16,13 +15,7 @@ const Banner = ({
 }) => (
   <Row className="m-5">
     <Col className="cbanner" xs={12} md={6}>
-      <img
-        src={imageUrl}
-        width={550}
-        height={300}
-        alt="banner"
-        className="image-left"
-      />
+      <img src={imageUrl} width="100%" alt="banner" className="image-left" />
     </Col>
     <Col xs={12} md={6}>
       <div style={{ padding: "5px" }}>
