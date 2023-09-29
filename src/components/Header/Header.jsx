@@ -17,7 +17,7 @@ const Header = () => {
     <Navbar expand="lg" id="navigation">
       <Container id="nav">
         <Navbar.Brand as={Link} to="./" className="navi">
-          <img src={Logo} alt="Logo" className="Logo" />
+          <img src={Logo} alt="Logo" className="Logo1" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
