@@ -20,7 +20,7 @@ const HomeAndRentBody = ({ showScrollIcon }) => {
         <div id="content-header">
           <h1 className="header">Choose your Urban Community</h1>
           <div className="flexbox">
-            <BootstrapRow className="header-content">
+            <BootstrapRow className="header-content mt-5">
               <BootstrapCol xs={12} sm={6}>
                 Welcome to beautifully Complete homes
               </BootstrapCol>
