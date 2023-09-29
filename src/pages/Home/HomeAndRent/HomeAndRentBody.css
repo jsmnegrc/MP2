@@ -1,27 +1,37 @@
-.content {
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (min-width: 576px) {
 }
 
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
+.content {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 h1.header {
   font-weight: bold;
-  color: #17601D;
+  color: #17601d;
 }
 
 div.col-12 {
   font-weight: bold;
-  color: #17601D;
+  color: #17601d;
 }
 
 .book .btn-success {
-  background-color: #17601D;
+  background-color: #17601d;
 }
 
 .booking a.custom-link {
-  text-decoration: none; 
+  text-decoration: none;
   color: #ffffff;
-  font-size: 18px; 
+  font-size: 18px;
 }

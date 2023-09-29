@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import "./HomeandRent.css"
-import "./HomeAndRentFetch"
+import { Row, Col, Button } from "react-bootstrap";
+import "./HomeAndRent.css";
 
 const Banner = ({
   purpose,
@@ -16,7 +15,7 @@ const Banner = ({
 }) => (
   <Row className="m-5">
     <Col className="cbanner" xs={12} md={6}>
-      <img src={imageUrl} width={550} height={300} alt="banner" className="image-left"/>
+      <img src={imageUrl} width="100%" alt="banner" className="image-left" />
     </Col>
     <Col xs={12} md={6}>
       <div style={{ padding: "5px" }}>
@@ -36,8 +35,7 @@ const Banner = ({
             {ButtonText}
           </Link>
         </Button>
-
-    </div>
+      </div>
     </Col>
   </Row>
 );
@@ -66,8 +64,8 @@ function HomeAndRent({ propertiesForSale }) {
         LinkName="/search?purpose=for-sale"
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
-      </div>
-  )
-};
-      
+    </div>
+  );
+}
+
 export default HomeAndRent;

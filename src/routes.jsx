@@ -5,7 +5,10 @@ import Contact from "./pages/Contact/Contact";
 import Property from "./pages/Properties/Property";
 import RentList from "./components/RentList";
 import Propertydetails from "./pages/Propertydetails/Propertydetails";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4b9fc936a435255b74e244bf2317bc7b339f2850
 
 const routes = [
   {
@@ -17,6 +20,13 @@ const routes = [
     element: <About />,
   },
   {
+<<<<<<< HEAD
+=======
+    path: "/homeandrent",
+    element: <HomeAndRentBody />,
+  },
+  {
+>>>>>>> 4b9fc936a435255b74e244bf2317bc7b339f2850
     path: "/property",
     element: <Property />,
   },
