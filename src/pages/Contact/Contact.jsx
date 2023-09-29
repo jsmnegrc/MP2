@@ -59,7 +59,7 @@ const ContactForm = () => {
   return (
     <Container className="p-5">
       <h1 className="fw-bold">Contact Us</h1>
-      <p className="contact">
+      <p className="contact p-0">
         Thank you for your interest in Urban Haven Real Estate. We are dedicated
         to assisting you with all your real estate requirements, whether you're
         interested in buying, selling, or renting a property. Please feel free
