@@ -234,14 +234,16 @@ const PropertyItem = () => {
                   </Col>
                 ))}
               </Row>
-              <div className="pagination-container">
+              <div className="pagination-container mt-3 mb-5 text-center">
                 {currentPage > 1 && (
-                  <Button className="mx-3" onClick={handlePreviousPage}>
+                  <Button className="mt-3 " onClick={handlePreviousPage}>
                     Previous Page
                   </Button>
                 )}
                 {currentPage < totalPages && (
-                  <Button onClick={handleNextPage}>Next Page</Button>
+                  <Button className="mt-3 mx-3" onClick={handleNextPage}>
+                    Next Page
+                  </Button>
                 )}
               </div>
             </div>
