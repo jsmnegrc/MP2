@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./HomeandRent.css";
+import "./HomeAndRent.css";
 import "./HomeAndRentFetch";
 
 const Banner = ({

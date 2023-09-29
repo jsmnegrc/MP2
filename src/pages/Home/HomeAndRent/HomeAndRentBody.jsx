@@ -29,7 +29,7 @@ const HomeAndRentBody = ({ showScrollIcon }) => {
                 Where engaging & Conceptive amenities are brought to life
               </BootstrapCol>
               <BootstrapCol xs={12}>
-                Where everyone is Connected to life’s essentials
+                Where everyone is Connected to lifes essentials
               </BootstrapCol>
               <BootstrapCol xs={12}>
                 Buying or renting your home is a Convenient & guided journey
