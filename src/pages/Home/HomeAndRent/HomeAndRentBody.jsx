@@ -2,13 +2,12 @@ import React from "react";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import {
   Container as BootstrapContainer,
-  Button,
   Row as BootstrapRow,
   Col as BootstrapCol,
+  Button,
 } from "react-bootstrap";
 import "./HomeAndRentBody.css";
 import HomeAndRent from "./HomeAndRent";
-import "./HomeAndRentBody.css";
 
 const HomeAndRentBody = ({ showScrollIcon }) => {
   const scrollToTop = () => {
@@ -22,16 +21,16 @@ const HomeAndRentBody = ({ showScrollIcon }) => {
           <h1 className="header">Choose your Urban Community</h1>
           <div className="flexbox">
             <BootstrapRow className="header-content">
-              <BootstrapCol xs={12}>
+              <BootstrapCol xs={12} sm={6}>
                 Welcome to beautifully Complete homes
               </BootstrapCol>
-              <BootstrapCol xs={12}>
+              <BootstrapCol xs={12} sm={6}>
                 Where engaging & Conceptive amenities are brought to life
               </BootstrapCol>
-              <BootstrapCol xs={12}>
-                Where everyone is Connected to lifes essentials
+              <BootstrapCol xs={12} sm={6}>
+                Where everyone is Connected to life's essentials
               </BootstrapCol>
-              <BootstrapCol xs={12}>
+              <BootstrapCol xs={12} sm={6}>
                 Buying or renting your home is a Convenient & guided journey
               </BootstrapCol>
             </BootstrapRow>

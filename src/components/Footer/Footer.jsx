@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="py-3">
       <Container>
         <Row className="tfooter">
-          <Col md className="col1">
+          <Col md className="col1 mt-3">
             <h4>Quick Links</h4>
             <ul>
               <li>
@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col md className="Col2">
+          <Col md className="Col2 mt-3">
             <div className="address">
               <h4>Address</h4>
               <p className="add">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col md className="Col3">
+          <Col md className="Col3 mt-3">
             <div className="contact">
               <h4 className="text-light">Contact</h4>
               <p className="con">
@@ -88,7 +88,7 @@ const Footer = () => {
 
           <Col md>
             <Link as={Link} to="/" className="flogo">
-              <img src={Logo} alt="logo" className="Logo small-logo" />
+              <img src={Logo} alt="logo" className="Logo img-fluid" />
             </Link>
           </Col>
 
